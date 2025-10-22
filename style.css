@@ -1,3 +1,15 @@
 body {
   margin: 20px;
 }
+
+/*Card*/
+.card {
+  border: 2px dotted rgb(55, 55, 128);
+  padding: 20px;
+}
+
+/*Image*/
+
+.card-img {
+  width: 250px;
+}
