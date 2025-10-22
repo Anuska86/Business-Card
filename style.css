@@ -1,28 +1,65 @@
 body {
   margin: 20px;
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background: linear-gradient(to right, #dbeafe, #a5b4fc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 /*Card*/
 .card {
-  padding: 20px;
   display: flex;
-  justify-content: space-around;
-  width: 400px;
-  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+  padding: 20px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+  color: #1f2937;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
+}
+
+/*Card details*/
+.card-details {
   text-align: center;
-  color: #2b2839;
-  background-color: #ddebf8;
-  border-bottom: 8px solid #d8cefe;
+}
+
+.card-details h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.card-details p {
+  font-size: 1rem;
+  color: #374151;
+}
+
+.card-details h4 {
+  font-size: 0.9rem;
+  color: #4b5563;
 }
 
 /*Image*/
 
 .card-img {
   width: 250px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Utility class*/
 
 .dotted-blue {
   border: 2px dotted rgb(55, 55, 128);
+  border-radius: 12px;
 }
